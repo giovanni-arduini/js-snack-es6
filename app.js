@@ -1,6 +1,6 @@
 console.log("Snack 1");
 
-// Creare oggetti con 2 prorpietà: nome e peso
+// Creare oggetti con 2 proprietà: nome e peso
 
 // const bike1 = {
 //   name: "SuperSix Evo",
@@ -39,4 +39,12 @@ const weight1 = bikeList[0].weightInLbs;
 const weight2 = bikeList[1].weightInLbs;
 const weight3 = bikeList[2].weightInLbs;
 
+lightestWeight = Math.min(weight1, weight2, weight3);
+console.log(lightestWeight);
+
+for (let i = 0; i < bikeList.length; i++) {
+  if (bikeList[i].weightInLbs === lightestWeight) {
+    console.log(bikeList[i].name);
+  }
+}
 // Stampare il nome della bici con peso minore
